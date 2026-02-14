@@ -1,118 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Nidhish Kumaran MA | Portfolio</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
+    <meta charset="UTF-8">
+    <title>Your Name | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
-<nav>
-  <h2>Nidhish Kumaran MA</h2>
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#certifications">Certificates</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+    <!-- Navbar -->
+    <nav>
+        <h2 class="logo">Nidhish</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle">🌙</button>
+    </nav>
 
-<!-- HERO SECTION -->
-<header class="hero">
-    <!-- Profile Photo -->
-    <img src="WhatsApp Image 2026-01-09 at 11.45.58.jpeg" alt="Nidhish Kumaran MA" class="profile-pic">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Hi, I'm <span class="highlight">Nidhish</span></h1>
+        <h2>I am <span class="typing"></span></h2>
+        <a href="#contact" class="btn">Hire Me</a>
+    </section>
 
-    <h1>Nidhish Kumaran MA</h1>
-    <p>Cyber Security & Machine Learning Enthusiast</p>
+    <!-- About -->
+    <section id="about" data-aos="fade-up">
+        <h2>About Me</h2>
+        <p>
+            Passionate developer interested in AI, IoT and building smart solutions.
+            I enjoy solving real-world problems using technology.
+        </p>
+    </section>
 
-    <!-- Resume Buttons -->
-    <div class="hero-buttons">
-        <a href="Nidhish_Kumaran_Resume.pdf" download class="btn">
-            <i class="fas fa-download"></i> Download Resume
-        </a>
-        <a href="Nidhish_Kumaran_Resume.pdf" target="_blank" class="btn-outline">
-            <i class="fas fa-eye"></i> View Resume
-        </a>
-        <a href="#projects" class="btn-outline">
-            <i class="fas fa-code"></i> View Projects
-        </a>
-    </div>
-</header>
+    <!-- Skills -->
+    <section id="skills" data-aos="fade-up">
+        <h2>Skills</h2>
+        <div class="skill-grid">
+            <div class="card">HTML</div>
+            <div class="card">CSS</div>
+            <div class="card">JavaScript</div>
+            <div class="card">Python</div>
+            <div class="card">AI / ML</div>
+            <div class="card">IoT</div>
+        </div>
+    </section>
 
-<section id="about" class="card">
-<h2>About Me</h2>
-<p>
-Aspiring technology and machine learning enthusiast with a focus on cyber security.
-Passionate about solving real-world problems using analytical thinking and innovative solutions.
-</p>
-</section>
+    <!-- Projects -->
+    <section id="projects" data-aos="fade-up">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>AI Spoilage Detection</h3>
+                <p>IoT + AI based sustainable onion storage monitoring system.</p>
+                <a href="#">View Project</a>
+            </div>
 
-<section id="education" class="card">
-<h2>Education</h2>
-<p><b>B.Sc Computer Science with Cyber Security</b><br>
-Dr. N.G.P Arts and Science College (2023–2026) – 61.5%</p>
-<p><b>HSC</b><br>
-Nanjappa Boys Hr Sec School, Tiruppur – 79.3%</p>
-</section>
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>Modern responsive personal portfolio website.</p>
+                <a href="#">View Project</a>
+            </div>
+        </div>
+    </section>
 
-<section id="skills" class="card">
-<h2>Skills</h2>
-<div class="skills">
-<span>C</span><span>C++</span><span>Java</span><span>Python</span>
-<span>HTML</span><span>CSS</span><span>SQL</span>
-<span>CorelDRAW</span><span>Illustrator</span><span>Premiere Pro</span>
-<span>Filmora</span><span>Autopsy</span>
-</div>
-</section>
+    <!-- Contact -->
+    <section id="contact" data-aos="fade-up">
+        <h2>Contact Me</h2>
+        <p>Email: yourmail@email.com</p>
+    </section>
 
-<section id="projects" class="card">
-<h2>Projects</h2>
-<div class="projects">
+    <footer>
+        <p>© 2026 Nidhish | All Rights Reserved</p>
+    </footer>
 
-<div class="project">
-<h3>Online Examination System</h3>
-<p>Java GUI system with real-time evaluation, scoring and result generation.</p>
-<a href="#" class="project-link">GitHub Link</a>
-</div>
-
-<div class="project">
-<h3>IoT Turn Counter Device</h3>
-<p>IoT-based hardware system for accurate rotation counting.</p>
-<a href="#" class="project-link">Project Details</a>
-</div>
-
-</div>
-</section>
-
-<section id="certifications" class="card">
-<h2>Certifications & Papers</h2>
-<ul>
-<li>National Seminar on AI & Blockchain Detection</li>
-<li>Paper: “Demystifying the Internet of Things” – Bharathiar University</li>
-<li>Paper: “Smart Technologies for Carbon Footprint Reduction” – PSG CAS</li>
-</ul>
-</section>
-
-<section id="contact" class="card">
-<h2>Contact</h2>
-<p><i class="fas fa-map-marker-alt"></i> Tiruppur, Tamil Nadu</p>
-<p><i class="fas fa-phone"></i> +91 77080 40890</p>
-<p><i class="fas fa-envelope"></i> nidhishkumaranm@gmail.com</p>
-
-<div class="social">
-<a href="https://github.com/nidhishkumaranma" target="_blank"><i class="fab fa-github"></i></a>
-<a href="https://www.linkedin.com/in/nidhish-kumaran-manimaran-2450512b4/" target="_blank"><i class="fab fa-linkedin"></i></a>
-<a href="mailto:nidhishkumaranm@gmail.com"><i class="fas fa-envelope"></i></a>
-</div>
-</section>
-
-<footer>
-© 2026 Nidhish Kumaran MA | Designed by Me
-</footer>
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
